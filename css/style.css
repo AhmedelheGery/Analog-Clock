@@ -1,0 +1,164 @@
+* , *:after , *:before{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://res.cloudinary.com/hegeryfiles/image/upload/v1550339371/clock-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.main-color{
+    background-color: #3e9294;
+}
+.second-color{
+    background-color:#582733 !important;
+}
+/* START CLOCK STYLE */
+.clock{
+    height: 400px;
+    width:  400px;
+    border:  5px solid #000;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    background-color: #181717;
+    box-shadow: 0 2vw 4vw -1vw rgba(0,0,0,0.8);
+}
+.clock .dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 4;
+}
+
+.clock .twelve {
+    position: absolute;
+    width: 3px;
+    height: 15px;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.clock .two {
+    position: absolute;
+    width: 15px;
+    height: 3px;
+    right: 10px;
+    margin:auto 0;
+} 
+.clock .three {
+    position: absolute;
+    width: 15px;
+    height: 3px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+  }
+  
+.clock .six{
+    position: absolute;
+    width: 3px;
+    height: 15px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  
+.clock .nine{
+    position: absolute;
+    width: 15px;
+    height: 3px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+}
+.clock .line{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform-origin: bottom;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.clock #secLine{
+    height: 170px;
+    width: 3px;
+    bottom: 170px;
+    z-index: 3;
+}
+.clock #minLine{
+    width: 7px;
+    height: 120px;
+    bottom: 120px;
+    transform-origin: bottom;
+    z-index: 2;
+  }
+  .clock #hourLine{
+    width: 10px;
+    height: 80px;
+    bottom: 80px;
+    z-index: 1;
+  }
+  /* START LINKS STYLE */
+  button{
+    background-color: #3e9294;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px 30px;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+  }
+  button:hover{
+    background-color: #2EE59D !important;
+    box-shadow : 0px 15px 20px rgba(46, 229, 157, 0.4) !important;
+    color: #fff !important;
+    transform: translateY(-7px);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
